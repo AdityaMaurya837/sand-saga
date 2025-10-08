@@ -1,2 +1,24 @@
-# sand-saga
-Sand Saga - powered by Sandcup is a creative platform that brings stories to life. We host inspiring design sessions, share innovative ideas, and collaborate to build engaging experiences. Our mission is to spotlight creativity, empower designers, and transform concepts into impactful realities, one session at a time.
+# Sand Saga
+
+React-based web app with Material UI, and TailwindCSS. Dockerized for easy deployment.
+
+## Tech Stack
+- React 19
+- Material UI
+- GSAP
+- TailwindCSS
+- Docker & Docker Compose
+- React Testing Library
+
+## Setup
+
+### Prerequisites
+- Node.js v18+
+- Docker & Docker Compose
+
+### Install & Run
+```bash
+git clone https://github.com/your-username/sand-saga.git
+cd sand-saga
+npm install
+npm start
