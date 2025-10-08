@@ -1,0 +1,180 @@
+/*---------------------------------------------*/
+/*  Devices (Mobile and tad) */
+/*---------------------------------------------*/
+@media (max-width: 992.98px) {
+    .banner-bg {
+        height: 30vh;
+        background-image: unset;
+        background-position: center;
+        background-repeat: no-repeat;
+        background: linear-gradient(to right, #FFF6E0, #F1BFF0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-sec-info {
+        position: unset;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero-sec-info p {
+        width: 100%;
+    }
+
+    .tribe-content h2 {
+        font-size: 1.5em;
+    }
+
+
+    .new-main-sec {
+        background-position: right;
+    }
+
+    .news-info {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1em;
+    }
+
+    .padding-sm {
+        padding: 3em 0 !important;
+    }
+
+    .episode-card img {
+        height: 15em;
+    }
+
+    .sketch-section-heading {
+        position: absolute;
+        left: 30%;
+        top: 28%;
+    }
+
+    .footer-head {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .footer-menu ul li {
+        text-shadow:
+            2px 2px 4px rgba(0, 0, 0, 0.8),
+            0px 0px 10px rgba(0, 0, 0, 0.7),
+            0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .footer-bottom img {
+        height: 4em;
+    }
+
+    .footer-bottom .social-icons ul {
+        padding-right: unset;
+    }
+
+}
+
+/*---------------------------------------------*/
+/*  Devices (Mobile and tad) */
+/*---------------------------------------------*/
+@media (max-width: 576px) {
+    .nav-tabs-inner {
+        flex-direction: column !important;
+    }
+
+    .footer-info h2 {
+        font-size: 1em !important;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .sketch-section-heading h2 {
+        font-size: 1em;
+    }
+
+    .sketch-section-heading {
+        position: absolute;
+        left: 14%;
+        top: 20%;
+    }
+
+    .sketch-section-info {
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    max-width: 60%;
+}
+
+.news-info-text h3 {
+    color: var(--secondary-color);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+    .footer-bottom img {
+        height: 3em;
+    }
+    .footer-menu {
+        padding-right: unset;
+    }
+}
+
+/*---------------------------------------------*/
+/* Small Devices (Mobile Landscape / Small Tablets) */
+/*---------------------------------------------*/
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/*---------------------------------------------*/
+/* Medium Devices (Tablets / Small Laptops) */
+/*---------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/*---------------------------------------------*/
+/* Large Devices (Laptops / Desktops) */
+/*---------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/*---------------------------------------------*/
+/* Large Devices and Above (≥ 992px) */
+/*---------------------------------------------*/
+@media (min-width: 992px) {}
+
+/*---------------------------------------------*/
+/* Extra Large Devices (Big Desktops ≥1440px) */
+/*---------------------------------------------*/
+@media (min-width: 1440px) {}
+
+/*---------------------------------------------*/
+/* Ultra-Wide Screens (≥1600px) */
+/*---------------------------------------------*/
+@media screen and (min-width: 1600px) {}
+
+/*---------------------------------------------*/
+/* 4K or Super-Wide Displays (≥1900px) */
+/*---------------------------------------------*/
+@media screen and (min-width: 1900px) {}
+
+/*---------------------------------------------*/
+/* Max Width Conditions */
+/*---------------------------------------------*/
+
+/* Below Large Screens (<1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Below Medium Screens (<992px) */
+@media (max-width: 991.98px) {}
+
+/* Below Small Screens (<768px) */
+@media (max-width: 767.98px) {}
+
+/* Below Extra Small Screens (<576px) */
+@media (max-width: 575.98px) {}
