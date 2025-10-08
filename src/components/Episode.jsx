@@ -1,16 +1,69 @@
 import React, { useState } from "react";
 
-
 const episodesData = [
-  { id: 1, episodeNo: 1, title: "The Tea Designer", creator: "Sandcup Studio", img: '/assets/img/Episodes/episode1.svg' },
-  { id: 2, episodeNo: 2, title: "The Laughing Dhanukya", creator: "Sandcup Studio", img: '/assets/img/Episodes/episode2.svg' },
-  { id: 3, episodeNo: 3, title: "The Vegetamilian", creator: "Sandcup Studio", img: '/assets/img/Episodes/episode3.svg' },
-  { id: 4, episodeNo: 4, title: "Ruby: A Gem of an HR", creator: "Sandcup Studio", img: '/assets/img/Episodes/episode4.svg' },
-  { id: 5, episodeNo: 5, title: "That’s What He Said", creator: "Sandcup Studio", img: '/assets/img/Episodes/episode5.svg' },
-  { id: 6, episodeNo: 6, title: "The Puzzle", creator: "Sandcup Studio", img: '/assets/img/Episodes/episode6.svg' },
-  { id: 7, episodeNo: 7, title: "Hearty Takeaways", creator: "Sandcup Studio", img: '/assets/img/Episodes/episode7.svg' },
-  { id: 8, episodeNo: 8, title: "Cough It Off", creator: "Sandcup Studio", img: '/assets/img/Episodes/episode8.svg' },
-  { id: 9, episodeNo: 9, title: "Snooze Over Submissions", creator: "Sandcup Studio", img: '/assets/img/Episodes/episode9.svg' },
+  {
+    id: 1,
+    episodeNo: 1,
+    title: "The Tea Designer",
+    creator: "Sandcup Studio",
+    img: "/assets/img/Episodes/episode1.svg",
+  },
+  {
+    id: 2,
+    episodeNo: 2,
+    title: "The Laughing Dhanukya",
+    creator: "Sandcup Studio",
+    img: "/assets/img/Episodes/episode2.svg",
+  },
+  {
+    id: 3,
+    episodeNo: 3,
+    title: "The Vegetamilian",
+    creator: "Sandcup Studio",
+    img: "/assets/img/Episodes/episode3.svg",
+  },
+  {
+    id: 4,
+    episodeNo: 4,
+    title: "Ruby: A Gem of an HR",
+    creator: "Sandcup Studio",
+    img: "/assets/img/Episodes/episode4.svg",
+  },
+  {
+    id: 5,
+    episodeNo: 5,
+    title: "That’s What He Said",
+    creator: "Sandcup Studio",
+    img: "/assets/img/Episodes/episode5.svg",
+  },
+  {
+    id: 6,
+    episodeNo: 6,
+    title: "The Puzzle",
+    creator: "Sandcup Studio",
+    img: "/assets/img/Episodes/episode6.svg",
+  },
+  {
+    id: 7,
+    episodeNo: 7,
+    title: "Hearty Takeaways",
+    creator: "Sandcup Studio",
+    img: "/assets/img/Episodes/episode7.svg",
+  },
+  {
+    id: 8,
+    episodeNo: 8,
+    title: "Cough It Off",
+    creator: "Sandcup Studio",
+    img: "/assets/img/Episodes/episode8.svg",
+  },
+  {
+    id: 9,
+    episodeNo: 9,
+    title: "Snooze Over Submissions",
+    creator: "Sandcup Studio",
+    img: "/assets/img/Episodes/episode9.svg",
+  },
 ];
 
 export default function Episodes() {
@@ -31,9 +84,7 @@ export default function Episodes() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <button
-            className="search-btn flex items-center justify-center"
-          >
+          <button className="search-btn flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 text-dark"
@@ -107,21 +158,16 @@ export default function Episodes() {
       {filteredEpisodes.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {filteredEpisodes.map((ep) => (
-            <div
-              key={ep.id}
-              className="episode-card"
-            >
-              <img
-                src={ep.img}
-                alt={ep.title}
-                loading="lazy" 
-              />
-              <div className="episode-card-info"> 
-                 <h4 className="text-base text-gray-500">Episode {ep.episodeNo}</h4>
-                <h3>
-                  {ep.title}
-                </h3>
-                <p><i>By {ep.creator}</i></p>
+            <div key={ep.id} className="episode-card">
+              <img src={ep.img} alt={ep.title} loading="lazy" />
+              <div className="episode-card-info">
+                <h4 className="text-base text-gray-500">
+                  Episode {ep.episodeNo}
+                </h4>
+                <h3>{ep.title}</h3>
+                <p>
+                  <i>By {ep.creator}</i>
+                </p>
               </div>
             </div>
           ))}

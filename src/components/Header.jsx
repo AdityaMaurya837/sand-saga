@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
-import { Button } from '@mui/material';
+import React, { useState } from "react";
+import { Button } from "@mui/material";
 
-
-const logo = process.env.PUBLIC_URL + '/assets/img/logo-dark.png';
-
+const logo = process.env.PUBLIC_URL + "/assets/img/logo-dark.png";
 
 const ResponsiveHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
-
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -20,34 +17,34 @@ const ResponsiveHeader = () => {
 
   const menuItems = [
     {
-      label: 'SandsKriti',
-      type: 'dropdown',
+      label: "SandsKriti",
+      type: "dropdown",
       items: [
-        { label: 'Web Development', href: '#web-dev' },
-        { label: 'Mobile Apps', href: '#mobile' },
-        { label: 'Cloud Solutions', href: '#cloud' }
-      ]
+        { label: "Web Development", href: "#web-dev" },
+        { label: "Mobile Apps", href: "#mobile" },
+        { label: "Cloud Solutions", href: "#cloud" },
+      ],
     },
     {
-      label: 'Community Engagement',
-      type: 'dropdown',
+      label: "Community Engagement",
+      type: "dropdown",
       items: [
-        { label: 'Join Now', href: '#product1' },
-        { label: 'Explore More', href: '#product2' },
-      ]
+        { label: "Join Now", href: "#product1" },
+        { label: "Explore More", href: "#product2" },
+      ],
     },
     {
-      label: 'Knowledge',
-      type: 'dropdown',
+      label: "Knowledge",
+      type: "dropdown",
       items: [
-        { label: 'Documentation', href: '#docs' },
-        { label: 'Tutorials', href: '#tutorials' },
-        { label: 'Blog', href: '#blog' }
-      ]
+        { label: "Documentation", href: "#docs" },
+        { label: "Tutorials", href: "#tutorials" },
+        { label: "Blog", href: "#blog" },
+      ],
     },
-    { label: 'Event', href: '#senders', type: 'link' },
-    { label: 'Job', href: '#senders', type: 'link' },
-    { label: 'Contact Us', href: '#contact', type: 'link' }
+    { label: "Event", href: "#senders", type: "link" },
+    { label: "Job", href: "#senders", type: "link" },
+    { label: "Contact Us", href: "#contact", type: "link" },
   ];
 
   return (
@@ -61,7 +58,7 @@ const ResponsiveHeader = () => {
           <nav className="hidden lg:flex space-x-1 items-center">
             {menuItems.map((item, index) => (
               <div key={item.label} className="relative">
-                {item.type === 'link' ? (
+                {item.type === "link" ? (
                   <a
                     href={item.href}
                     className="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 text-bases"
@@ -76,13 +73,19 @@ const ResponsiveHeader = () => {
                     >
                       {item.label}
                       <svg
-                        className={`ml-1 w-4 h-4 transform transition-transform duration-200 ${openDropdown === index ? 'rotate-180' : ''
-                          }`}
+                        className={`ml-1 w-4 h-4 transform transition-transform duration-200 ${
+                          openDropdown === index ? "rotate-180" : ""
+                        }`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
                       </svg>
                     </button>
 
@@ -115,16 +118,19 @@ const ResponsiveHeader = () => {
             >
               <div className="w-6 h-6 flex flex-col justify-center space-y-1">
                 <span
-                  className={`block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''
-                    }`}
+                  className={`block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
+                    isMenuOpen ? "rotate-45 translate-y-1.5" : ""
+                  }`}
                 />
                 <span
-                  className={`block h-0.5 w-6 bg-current transition duration-300 ease-in-out ${isMenuOpen ? 'opacity-0' : 'opacity-100'
-                    }`}
+                  className={`block h-0.5 w-6 bg-current transition duration-300 ease-in-out ${
+                    isMenuOpen ? "opacity-0" : "opacity-100"
+                  }`}
                 />
                 <span
-                  className={`block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''
-                    }`}
+                  className={`block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
+                    isMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
+                  }`}
                 />
               </div>
             </button>
@@ -136,7 +142,7 @@ const ResponsiveHeader = () => {
             <div className="flex flex-col space-y-2">
               {menuItems.map((item, index) => (
                 <div key={item.label}>
-                  {item.type === 'link' ? (
+                  {item.type === "link" ? (
                     <a
                       href={item.href}
                       className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium rounded-md transition-colors duration-200"
@@ -152,13 +158,19 @@ const ResponsiveHeader = () => {
                       >
                         {item.label}
                         <svg
-                          className={`w-4 h-4 transform transition-transform duration-200 ${openDropdown === index ? 'rotate-180' : ''
-                            }`}
+                          className={`w-4 h-4 transform transition-transform duration-200 ${
+                            openDropdown === index ? "rotate-180" : ""
+                          }`}
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
                         >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
                         </svg>
                       </button>
 
